@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    display: block;
+    margin-top: 70px;
+    text-align: center;
+    color: lavender;
+    font-family: Roboto;
+}
+
+.main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+body {
+    background-image: url("orangebg.png");
+    height: 100%;
+}
+
+.textview {
+    width:212px;
+    height: 51px;
+    margin: 2px;
+    padding: 5px;
+    font-size: 25px;
+    cursor: text;
+    font-family: Roboto;
+    color: orange;
+}
+button {
+    width: 51px;
+    height: 51px;
+    margin: 2px;
+    padding: 5px;
+    cursor: pointer;
+    border: none;
+    font-family: Roboto;
+    font-size: 28px;
+    color: lavender;
+    background-color: darkorange;
+}
+
+button:hover {
+    background-color: orangered;
+}
+
