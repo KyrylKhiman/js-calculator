@@ -1,0 +1,99 @@
+html {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background: linear-gradient(70deg, rgb(247, 247, 247), rgb(250, 79, 0));
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    margin: 70px 0 0 0;
+    font-size: 30px;
+    font-family: "Roboto";
+    font-weight: 500;
+    color: whitesmoke;
+}
+
+.yellow {
+    color: rgb(255, 180, 40);
+}
+
+.main {
+    background-color: rgb(185, 184, 184);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgb(49, 49, 49);
+    border-bottom: 10px solid grey;
+}
+
+
+@font-face { 
+    src: url(../fonts/digital-7.ttf);
+    font-family: Digital;
+    font-style: normal;
+}
+
+.text {
+    width: 236px;
+    height: 51px;
+    margin: 2px;
+    padding: 5px;
+    text-align: right;
+    font-size: 45px;
+    border: none;
+    border-bottom: 5px solid rgb(194,211,227);
+    border-radius: 7px;
+    outline: none;
+    cursor: text;
+    font-family: Digital;
+    background-color: gainsboro;
+}
+
+.numpad {
+    margin: 10px 0 0 0;
+}
+
+.btn-numpad, .btn-clean, .btn-calc, .btn-back {
+    width: 51px;
+    height: 51px;
+    margin: 2px;
+    padding: 5px;
+    cursor: pointer;
+    border: none;
+    border-bottom: 5px solid lavender;
+    border-radius: 7px;
+    outline: none;
+    font-family: "Inter";
+    font-size: 35px;
+    color: rgba(0, 0, 0, 0.7);
+    background-color: white;
+}
+
+.btn-numpad:hover, .btn-clean:hover, .btn-calc:hover, .btn-back:hover {
+    background-color: lavender;
+}
+
+.btn-calc {
+    background-color: rgb(254,126,0);
+    border-bottom: 5px solid rgb(234,102,4);
+}
+
+.btn-calc:hover {
+    background-color: rgb(234,102,4);
+}
+
+
+

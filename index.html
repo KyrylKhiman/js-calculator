@@ -1,52 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>JS Calculator</title>
-    <script src="calc.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="icon" href="calc.ico" type="image/x-icon">
-</head>
-<body>
-    <div class="background"></div>
-    <div>
-        <h1>JS Calculator</h1>
-    </div>
-    <div class="main">
-        <form name="form">
-            <input class="textview" name="textview" disabled>
-        </form>
-        <table>
-            <tr>
-                <td><button value="C" onclick="clean()">C</button></td>
-                <td><button value="<" onclick="back()"><</button></td>
-                <td><button value="/" onclick="insert(value)">/</button></td>
-                <td><button value="*" onclick="insert(value)">x</button></td>
-            </tr>
-            <tr>
-                <td><button value="7" onclick="insert(value)">7</button></td>
-                <td><button value="8" onclick="insert(value)">8</button></td>
-                <td><button value="9" onclick="insert(value)">9</button></td>
-                <td><button value="+" onclick="insert(value)">+</button></td>
-            </tr>
-            <tr>
-                <td><button value="4" onclick="insert(value)">4</button></td>
-                <td><button value="5" onclick="insert(value)">5</button></td>
-                <td><button value="6" onclick="insert(value)">6</button></td>
-                <td><button value="-" onclick="insert(value)">-</button></td>
-            </tr>
-            <tr>
-                <td><button value="1" onclick="insert(value)">1</button></td>
-                <td><button value="2" onclick="insert(value)">2</button></td>
-                <td><button value="3" onclick="insert(value)">3</button></td>
-                <td rowspan="5"><button style="height:110px" onclick="calculate()">=</button></td>
-            </tr>
-            <tr>
-                <td colspan="2"><button style="width:110px" value="0" onclick="insert(value)">0</button></td>
-                <td><button value="." onclick="insert(value)">.</button></td>
-            </tr>
-        </table>
-    </div>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <script src="js/calc.js"></script>
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Inter:wght@200;500&family=Roboto:wght@300;500&family=Inter:wght@800&display=swap" rel="stylesheet">
+        <link rel="icon" href="calc.ico" type="image/x-icon">
+        <title>JS Calculator</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="header">
+                <h1>CALCULATOR.<span class="yellow">JS</span></h1>
+            </div>
+            <div class="main">
+                <form name="form">
+                    <input type="text" class="text">
+                </form>
+                <table class="numpad">
+                    <tr>
+                        <td><button value="C" class="btn-clean">C</button></td>
+                        <td><button value="<" class="btn-back"><</button></td>
+                        <td><button value="/" class="btn-numpad">/</button></td>
+                        <td><button value="*" class="btn-numpad">x</button></td>
+                    </tr>
+                    <tr>
+                        <td><button value="7" class="btn-numpad">7</button></td>
+                        <td><button value="8" class="btn-numpad">8</button></td>
+                        <td><button value="9" class="btn-numpad">9</button></td>
+                        <td><button value="+" class="btn-numpad">+</button></td>
+                    </tr>
+                    <tr>
+                        <td><button value="4" class="btn-numpad">4</button></td>
+                        <td><button value="5" class="btn-numpad">5</button></td>
+                        <td><button value="6" class="btn-numpad">6</button></td>
+                        <td><button value="-" class="btn-numpad">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button value="1" class="btn-numpad">1</button></td>
+                        <td><button value="2" class="btn-numpad">2</button></td>
+                        <td><button value="3" class="btn-numpad">3</button></td>
+                        <td rowspan="5"><button class="btn-calc" style="height:110px">=</button></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button class="btn-numpad" style="width:110px" value="0">0</button></td>
+                        <td><button value="." class="btn-numpad">.</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
 </html>
